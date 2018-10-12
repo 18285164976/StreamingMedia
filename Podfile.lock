@@ -1,0 +1,20 @@
+PODS:
+  - LFLiveKit (2.6)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LFLiveKit
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LFLiveKit
+    - Masonry
+
+SPEC CHECKSUMS:
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 1a9461cba8bc355b6586a81f5631970a38ca9b55
+
+COCOAPODS: 1.5.3

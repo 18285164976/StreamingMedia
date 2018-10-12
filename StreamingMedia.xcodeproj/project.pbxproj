@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D8D8DD3E0F1B9A7D32E03C3 /* libPods-StreamingMedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D444A7484E1A2CEE80FAE710 /* libPods-StreamingMedia.a */; };
 		60095D98217032D60016A490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60095D97217032D60016A490 /* AppDelegate.m */; };
 		60095D9B217032D60016A490 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60095D9A217032D60016A490 /* ViewController.m */; };
-		60095D9E217032D60016A490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60095D9C217032D60016A490 /* Main.storyboard */; };
 		60095DA0217032D70016A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60095D9F217032D70016A490 /* Assets.xcassets */; };
-		60095DA3217032D70016A490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60095DA1217032D70016A490 /* LaunchScreen.storyboard */; };
 		60095DA6217032D70016A490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60095DA5217032D70016A490 /* main.m */; };
+		60095DAE217035290016A490 /* MediaPlaryerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60095DAC217035280016A490 /* MediaPlaryerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,14 @@
 		60095D97217032D60016A490 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60095D99217032D60016A490 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		60095D9A217032D60016A490 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		60095D9D217032D60016A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60095D9F217032D70016A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		60095DA2217032D70016A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60095DA4217032D70016A490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60095DA5217032D70016A490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60095DAC217035280016A490 /* MediaPlaryerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlaryerViewController.m; sourceTree = "<group>"; };
+		60095DAD217035290016A490 /* MediaPlaryerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlaryerViewController.h; sourceTree = "<group>"; };
+		8C9026EB8CC8D8760B1F1A1A /* Pods-StreamingMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingMedia/Pods-StreamingMedia.debug.xcconfig"; sourceTree = "<group>"; };
+		D444A7484E1A2CEE80FAE710 /* libPods-StreamingMedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamingMedia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA999B8FE9C42339E5E0C406 /* Pods-StreamingMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingMedia/Pods-StreamingMedia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8D8DD3E0F1B9A7D32E03C3 /* libPods-StreamingMedia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01077B5EB23D516CECA56CC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9026EB8CC8D8760B1F1A1A /* Pods-StreamingMedia.debug.xcconfig */,
+				EA999B8FE9C42339E5E0C406 /* Pods-StreamingMedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36E94AB963C977D698AA31A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D444A7484E1A2CEE80FAE710 /* libPods-StreamingMedia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60095D8A217032D60016A490 = {
 			isa = PBXGroup;
 			children = (
 				60095D95217032D60016A490 /* StreamingMedia */,
 				60095D94217032D60016A490 /* Products */,
+				01077B5EB23D516CECA56CC6 /* Pods */,
+				36E94AB963C977D698AA31A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +85,9 @@
 				60095D97217032D60016A490 /* AppDelegate.m */,
 				60095D99217032D60016A490 /* ViewController.h */,
 				60095D9A217032D60016A490 /* ViewController.m */,
-				60095D9C217032D60016A490 /* Main.storyboard */,
+				60095DAD217035290016A490 /* MediaPlaryerViewController.h */,
+				60095DAC217035280016A490 /* MediaPlaryerViewController.m */,
 				60095D9F217032D70016A490 /* Assets.xcassets */,
-				60095DA1217032D70016A490 /* LaunchScreen.storyboard */,
 				60095DA4217032D70016A490 /* Info.plist */,
 				60095DA5217032D70016A490 /* main.m */,
 			);
@@ -78,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60095DA9217032D70016A490 /* Build configuration list for PBXNativeTarget "StreamingMedia" */;
 			buildPhases = (
+				8BC986B3621BC51C5C5EB2CA /* [CP] Check Pods Manifest.lock */,
 				60095D8F217032D60016A490 /* Sources */,
 				60095D90217032D60016A490 /* Frameworks */,
 				60095D91217032D60016A490 /* Resources */,
@@ -128,13 +152,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60095DA3217032D70016A490 /* LaunchScreen.storyboard in Resources */,
 				60095DA0217032D70016A490 /* Assets.xcassets in Resources */,
-				60095D9E217032D60016A490 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC986B3621BC51C5C5EB2CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamingMedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60095D8F217032D60016A490 /* Sources */ = {
@@ -142,31 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				60095D9B217032D60016A490 /* ViewController.m in Sources */,
+				60095DAE217035290016A490 /* MediaPlaryerViewController.m in Sources */,
 				60095DA6217032D70016A490 /* main.m in Sources */,
 				60095D98217032D60016A490 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		60095D9C217032D60016A490 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60095D9D217032D60016A490 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		60095DA1217032D70016A490 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60095DA2217032D70016A490 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		60095DA7217032D70016A490 /* Debug */ = {
@@ -281,8 +306,10 @@
 		};
 		60095DAA217032D70016A490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9026EB8CC8D8760B1F1A1A /* Pods-StreamingMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW493RE5T7;
 				INFOPLIST_FILE = StreamingMedia/Info.plist;
@@ -293,13 +320,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunlu.163.StreamingMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
 		60095DAB217032D70016A490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA999B8FE9C42339E5E0C406 /* Pods-StreamingMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW493RE5T7;
 				INFOPLIST_FILE = StreamingMedia/Info.plist;
@@ -310,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunlu.163.StreamingMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
